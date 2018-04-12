@@ -9,7 +9,7 @@ pipeline {
     }
     post { 
         always { 
-            echo 'ONCE AGAIN THIS IS JOB 2!'
+            echo ' HAI ONCE AGAIN THIS IS JOB 2!'
         }
     }
 }
