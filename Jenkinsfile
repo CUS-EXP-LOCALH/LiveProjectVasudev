@@ -1,15 +1,15 @@
-
-
 pipeline {
     agent any
-    tools {
-        maven 'M2_HOME'
-    }
     stages {
-        stage('Build') {
+        stage('Example') {
             steps {
-                sh 'mvn clean compile'
+                echo 'JOB 2'
             }
+        }
+    }
+    post { 
+        always { 
+            echo 'ONCE AGAIN THIS IS JOB 2!'
         }
     }
 }
