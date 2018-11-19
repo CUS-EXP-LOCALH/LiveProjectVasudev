@@ -7,11 +7,7 @@ pipeline {
             }
         }
         
-         stage('Example2') {
-            steps {
-                echo 'JOB 2'
-            }
-        }
+        
     }
     post { 
         always { 
