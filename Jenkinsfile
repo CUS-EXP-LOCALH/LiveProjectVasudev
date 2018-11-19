@@ -3,6 +3,12 @@ pipeline {
     stages {
         stage('Example') {
             steps {
+                echo 'JOB 1'
+            }
+        }
+        
+         stage('Example2') {
+            steps {
                 echo 'JOB 2'
             }
         }
